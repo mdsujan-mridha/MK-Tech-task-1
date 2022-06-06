@@ -1,0 +1,74 @@
+[debug] [2022-06-06T17:05:41.760Z] ----------------------------------------------------------------------
+[debug] [2022-06-06T17:05:41.762Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-06-06T17:05:41.762Z] CLI Version:   11.0.1
+[debug] [2022-06-06T17:05:41.763Z] Platform:      linux
+[debug] [2022-06-06T17:05:41.763Z] Node Version:  v16.15.1
+[debug] [2022-06-06T17:05:41.763Z] Time:          Mon Jun 06 2022 23:05:41 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-06-06T17:05:41.763Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-06T17:05:41.822Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-06T17:05:41.823Z] > authorizing via signed-in user (nextbdsite4@gmail.com)
+[debug] [2022-06-06T17:05:41.823Z] [iam] checking project task-1-7ffda for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-06-06T17:05:41.825Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/task-1-7ffda:testIamPermissions [none]
+[debug] [2022-06-06T17:05:41.825Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/task-1-7ffda:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-06T17:05:43.295Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/task-1-7ffda:testIamPermissions 200
+[debug] [2022-06-06T17:05:43.296Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/task-1-7ffda:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-06T17:05:43.298Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/task-1-7ffda [none]
+[debug] [2022-06-06T17:05:43.976Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/task-1-7ffda 200
+[debug] [2022-06-06T17:05:43.976Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/task-1-7ffda {"projectId":"task-1-7ffda","projectNumber":"288851917308","displayName":"Task-1","name":"projects/task-1-7ffda","resources":{"hostingSite":"task-1-7ffda"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'task-1-7ffda'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-06-06T17:05:43.979Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/task-1-7ffda [none]
+[debug] [2022-06-06T17:05:44.434Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/task-1-7ffda 200
+[debug] [2022-06-06T17:05:44.434Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/task-1-7ffda {"projectId":"task-1-7ffda","projectNumber":"288851917308","displayName":"Task-1","name":"projects/task-1-7ffda","resources":{"hostingSite":"task-1-7ffda"},"state":"ACTIVE"}
+[debug] [2022-06-06T17:05:44.436Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/288851917308/sites/task-1-7ffda/versions [none]
+[debug] [2022-06-06T17:05:44.437Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/288851917308/sites/task-1-7ffda/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-06-06T17:05:46.428Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/288851917308/sites/task-1-7ffda/versions 200
+[debug] [2022-06-06T17:05:46.428Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/288851917308/sites/task-1-7ffda/versions {"name":"projects/288851917308/sites/task-1-7ffda/versions/6eba60915e018dc6","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[task-1-7ffda]: beginning deploy... 
+[info] i  hosting[task-1-7ffda]: found 16 files in build 
+[debug] [2022-06-06T17:05:46.442Z] [hosting] uploading with 200 concurrency
+[debug] [2022-06-06T17:05:46.978Z] [hosting] hash cache [YnVpbGQ] stored for 16 files
+[debug] [2022-06-06T17:05:46.979Z] [hosting][hash queue][FINAL] {"max":528,"min":14,"avg":47.875,"active":0,"complete":16,"success":16,"errored":0,"retried":0,"total":16,"elapsed":536}
+[debug] [2022-06-06T17:05:46.980Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/288851917308/sites/task-1-7ffda/versions/6eba60915e018dc6:populateFiles [none]
+[debug] [2022-06-06T17:05:46.980Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/288851917308/sites/task-1-7ffda/versions/6eba60915e018dc6:populateFiles {"files":{"/addAPI.json":"d8382ba085d1a7b178b851daf69f4cd3dc5f0efecbe5bfa4cd8f405a4f6f9004","/asset-manifest.json":"0b4d6b4db6e859e555e1c85ae23657d56e06360015fcfffce5d33063d5ae8e57","/favicon.ico":"c599b7a91ab3627e3538125d9f40adc2d4bf949046984262670545dc7738af06","/index.html":"4a30709bbf6a7902bc4455c54121af9c0a3ba2eff061fe548646459e594fd94e","/logo192.png":"76c449ccb9cd117c2f2338f091b18f7050f3210e249b2228f5c81b23f34377cd","/manifest.json":"0958a5e0c831126100c8c2d06a6bbaa665a3900f21aaff4130238a6f5a113aa1","/robots.txt":"2544ca049f223a42bff01f72ad930a5edba75bbb7199d0f8430a02ff5aca16ec","/logo512.png":"7779210d56c1f3741e2e487799fe3092def4fa6ac450a60532b807c3a8971205","/static/js/787.347f5e04.chunk.js":"d922197ac39cd06c7ab18da41a6e94b1b62a7d098d13bd889df6be5f12e28237","/static/css/main.5b2909df.css":"0375759995fd2359bb449aea8b290c5aa0afc4ea7b5b3bf60d77821ab20fe5a2","/static/js/main.8e67042a.js.LICENSE.txt":"df667668c8c8f6a461a0c04fb4f1b77afa85581b27e95462398ef7efc9257a7b","/static/js/787.347f5e04.chunk.js.map":"265414be3bf347bb38b63b77b846463867f87b36644628f387d8c695101d45c0","/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg":"7d3ee40656c5a13fa0b04821777c1ba40bd028faa5c0e7475f61021d03fd35d6","/static/css/main.5b2909df.css.map":"c533553ec2bf4742da6f04fe9a8742842ef050458392bc3c56b110d2dbd8050a","/static/js/main.8e67042a.js":"004fea3a7a1abb58310635e1a2c631a93f2c891e4b040962d8e7db8753f7e682","/static/js/main.8e67042a.js.map":"9eaf5accd5c82d8bec8c91fa4e20d5e291130ecef3f6c41a9f4acae52d6ade72"}}
+[debug] [2022-06-06T17:05:48.624Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/288851917308/sites/task-1-7ffda/versions/6eba60915e018dc6:populateFiles 200
+[debug] [2022-06-06T17:05:48.624Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/288851917308/sites/task-1-7ffda/versions/6eba60915e018dc6:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/task-1-7ffda/versions/6eba60915e018dc6/files"}
+[debug] [2022-06-06T17:05:48.625Z] [hosting][populate queue][FINAL] {"max":1648,"min":1648,"avg":1648,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1648}
+[debug] [2022-06-06T17:05:48.625Z] [hosting] uploads queued: 0
+[debug] [2022-06-06T17:05:48.625Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1654535148625}
+[info] ✔  hosting[task-1-7ffda]: file upload complete 
+[debug] [2022-06-06T17:05:48.625Z] [hosting] deploy completed after 2196ms
+[debug] [2022-06-06T17:05:48.628Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "task-1-7ffda"
+    },
+    "site": "task-1-7ffda",
+    "version": "projects/288851917308/sites/task-1-7ffda/versions/6eba60915e018dc6"
+  }
+]
+[info] i  hosting[task-1-7ffda]: finalizing version... 
+[debug] [2022-06-06T17:05:48.629Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/288851917308/sites/task-1-7ffda/versions/6eba60915e018dc6 updateMask=status%2Cconfig
+[debug] [2022-06-06T17:05:48.629Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/288851917308/sites/task-1-7ffda/versions/6eba60915e018dc6 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2022-06-06T17:05:50.193Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/288851917308/sites/task-1-7ffda/versions/6eba60915e018dc6 200
+[debug] [2022-06-06T17:05:50.193Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/288851917308/sites/task-1-7ffda/versions/6eba60915e018dc6 {"name":"projects/288851917308/sites/task-1-7ffda/versions/6eba60915e018dc6","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-06-06T17:05:45.966504Z","createUser":{"email":"nextbdsite4@gmail.com"},"finalizeTime":"2022-06-06T17:05:50.046966Z","finalizeUser":{"email":"nextbdsite4@gmail.com"}}
+[debug] [2022-06-06T17:05:50.193Z] [hosting] finalized version for task-1-7ffda:[object Object]
+[info] ✔  hosting[task-1-7ffda]: version finalized 
+[info] i  hosting[task-1-7ffda]: releasing new version... 
+[debug] [2022-06-06T17:05:50.195Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/288851917308/sites/task-1-7ffda/releases versionName=projects%2F288851917308%2Fsites%2Ftask-1-7ffda%2Fversions%2F6eba60915e018dc6
+[debug] [2022-06-06T17:05:50.195Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/288851917308/sites/task-1-7ffda/releases {"message":null}

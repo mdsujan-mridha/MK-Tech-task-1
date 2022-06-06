@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import "./Header.css";
 const Header = () => {
     return (
@@ -17,7 +17,11 @@ const Header = () => {
         <Nav.Link href="adformats"> AD FORMATS </Nav.Link>
         <Nav.Link href="blogs"> BLOG </Nav.Link>
         <Nav.Link href="contactus"> CONTACT US </Nav.Link>
+        
       </Nav>
+      <Nav.Link href="contactus">   <Button variant="secondary"> Login </Button>{' '} </Nav.Link>
+      <Nav.Link href="contactus">     <Button variant="warning">Warning</Button>{' '} </Nav.Link>
+
     </Navbar.Collapse>
   </Container>
 </Navbar>
