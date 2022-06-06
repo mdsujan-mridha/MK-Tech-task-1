@@ -6,32 +6,12 @@ import  { AiFillTwitterCircle } from "react-icons/ai"
 const Footer = () => {
     return (
         <div className='footer'>
-            <div className='container'>
-                 <div className='row'>
-                     <div className='col-12 col-md-12 col-lg-3 left-side'>
-                       <h1 className='footer-about'>  About us </h1>
-                     <p>  Being a music lover is like possessing an excellent mate that could help you in all of your Thick n thins..!!
-
-Whether you are in your good or bad time , Music knows it all..!!! It could perfectly cherish you and make you go deep inside the emotions exploring a new world for you…!!!
-
-At times it could amplify your Fun or could make you Emotional…!!
-
-In short its EPIC FUN being a Music lover !!!
-
-</p>
-                     </div>
-                     
-                     <div className='col-12 col-md-12 col-lg-3 middle-side'>
-                         <h1> Quick Link </h1>
-                         <ul>
-                         <Link to="home"> Home </Link>
-                         <Link to="blogs"> Blogs </Link>
-                         <Link to="login"> login </Link>
-                         <Link to="register"> Register </Link>
-                         </ul>
-                      
-                     </div>
-                     <div className='col-12 col-md-12 col-lg-3 right-side'>
+           
+          
+               <div className="footer-container"> 
+               
+               <div className='first-section'>
+                      <h2> We are social </h2>
                           <h1> Follow us with </h1>
                         <ul>
                         <li>  <BsFacebook /> </li>
@@ -39,11 +19,42 @@ In short its EPIC FUN being a Music lover !!!
                           <li> < BsInstagram/> </li>
                           <li>  <BsWhatsapp/> </li>
                         </ul>
+                        <img className='footer-img' src="https://i.ibb.co/NYHNWXC/kevin-canlas-QYHeh-J9-Iovs-unsplash.jpg" alt="MK"/>
+                     </div>
+
+                     
+                     <div className='second-section'>
+                         <h1>Links </h1>
+                         <ul>
+                         <Link to="home"> ADVERTISERS </Link>
+                         <Link to="blogs"> PUBLISHERS </Link>
+                         <Link to="login"> INFLUENCERS </Link>
+                         <Link to="register"> AD FORMATS </Link>
+                         </ul>
+                      
+                     </div>
+                     <div className=' third-section '>
+                       <h1 className='footer-about'> Documentation </h1>
+                        <ul>
+                          <li> Terms & Condition </li>
+                          <li> PRIVACY POLICY </li>
+                          <li> CANCELLATION POLICY </li>
+                          <li> BLOG </li>
+                        </ul>
+                     </div>
+                     <div className=' fourth-section '>
+                       <h1 className='footer-about'> Support </h1>
+                        <ul>
+                          <li> FAQ </li>
+                          <li> MEDIA KIT </li>
+                          <li> Contact us </li>
+                        </ul>
                      </div>
                      
-                 </div>
+               </div>
+            
                 
-            </div>
+           
         </div>
     );
 };

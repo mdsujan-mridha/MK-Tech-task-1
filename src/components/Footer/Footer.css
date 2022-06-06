@@ -1,52 +1,104 @@
 .footer{
+ 
+}
+.footer-container{
     margin-top: 180px;
     padding: 80px 0px 80px 0px;
-    background: #000;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-left: 20px;
 }
-.left-side .footer-about{
-        
-     text-align: center;
-     color: #fff;
-
- }
-.left-side p{
-   text-align: justify;
-   color: rgba(240, 248, 255, 0.529);
-   margin-top: 50px;
-   font-size: 17px;
-   font-weight: 500;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.middle-side h1{
+.first-section h2{
     text-align: center;
-    color: #fff;
-
+    color: #644F9C;
+    font-size: 20px;
 }
-.middle-side ul{
-    display: flex;
-    flex-direction: column;
-    margin-left: 25px;
-    margin-top: 35px;
-}
-.middle-side ul li{
-    list-style: none;
-}
-.middle-side  a{
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.619);
-}
-.right-side h1{
-
+.first-section h1{
     text-align: center;
-    color: #fff;
+    color: #1c1c1c;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: 600;
 }
-.right-side ul{
+.first-section ul{
     margin-top: 50px;
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    font-size: 30px;
+    
+    justify-content: space-around;
 }
-.right-side li{
+.first-section li{
     list-style: none;
-    font-size: 35px;
-    color: #fff;
+
+}
+.footer-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 30%;
+    margin-top: 50px;
+}
+.second-section h1{
+    margin-left: 30px;
+   font-size: 20px;
+   font-weight: 600;
+   text-align: left;
+   color: #644F9C;
+}
+.second-section  ul{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.second-section  ul li{
+    list-style: none;
+}
+.second-section  a{
+    text-decoration: none;
+    color: #1c1c1c;
+    font-weight: 600;
+
+}
+.third-section h1{
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    color: #644F9C;
+}
+.third-section ul{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-decoration: none;
+    color: #1c1c1c;
+    font-weight: 600;
+}
+.third-section ul li{
+    list-style: none;
+}
+
+.fourth-section h1{
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    color: #644F9C;
+}
+.fourth-section ul{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-decoration: none;
+    color: #1c1c1c;
+    font-weight: 600;
+}
+.fourth-section ul li{
+    list-style: none;
 }
