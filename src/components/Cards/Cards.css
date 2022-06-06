@@ -1,0 +1,17 @@
+.card-section{
+  margin-top: 150px;
+}
+.card-img{
+    list-style: none;
+    font-size: 100px;
+    background: #fff;
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.129);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+   text-align: center;
+   align-items: center;
+   margin-left: 30%;
+   margin-top: 20px;
+   color: #1d4999;
+}

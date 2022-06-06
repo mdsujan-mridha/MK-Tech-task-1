@@ -1,0 +1,51 @@
+.counts-section{
+    margin-top: 150px;
+    background-color: #644f9c;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+.count-content-area{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+.first-div{
+    margin-top: 150px;
+    padding-bottom: 100px;
+    width: 300px;
+    height: 300px;
+    border: 2px white dotted;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+}
+.second-div{
+    background-color: #ffffff;
+    margin-top: 150px;
+    padding-bottom: 100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+} 
+.third-div{
+    background-color: #da674a;
+    margin-top: 150px;
+    padding-bottom: 100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+} 
+.card-content{
+    margin-top: 45%;
+}
+.counts-title{
+    font-size: 45px;
+    font-weight: 600;
+}

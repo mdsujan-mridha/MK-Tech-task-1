@@ -1,0 +1,11 @@
+.main-container{
+    display: flex;
+    align-items: center;
+}
+.fist-col{
+    align-items: center;
+}
+.banner-img{
+    width: 800px;
+    height: 800px;
+}

@@ -1,0 +1,22 @@
+[
+    {   "img":"https://i.ibb.co/bzGTC4M/How-to-install-a-motherboard.jpg",
+        "title":"POP-UNDER",
+        "description": "This is one of the most popular ads. After users click, this ad opens landing page in behind. So, the user experience is not hampered much."
+
+    },
+    {   "img": "https://i.ibb.co/Wp5GhvF/home-3.jpg",
+        "title":"BANNER AD",
+        "description": "Choose between the available banner formats. Highly effective ad for visibility."
+
+    },
+    {   "img": "",
+        "title":"NATIVE",
+        "description": "Ad format with the image and the title, that perfectly fits into the content of the site. Native ads are placed in the most visible areas of the page and, thus, this format shows good results and the level of interaction."
+
+    },
+    {   "img": "",
+        "title":"SKIM",
+        "description": "SKIM is a link that a publisher inserts on a specific site element, and after clicking on it, an advertisement appears to the user. SKIM gives 100% control of your sold traffic amount, higher CR to advertisers and CPM rates to publishers."
+
+    }
+]
