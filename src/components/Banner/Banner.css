@@ -9,3 +9,15 @@
     width: 800px;
     height: 800px;
 }
+
+@media screen and (max-width: 600px) {
+    .main-container{
+        flex-direction: column;
+       
+    }
+    .banner-img{
+        width: 100%;
+        height: auto;
+    }
+  }
+  

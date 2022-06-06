@@ -42,10 +42,17 @@
     text-align: center;
     align-items: center;
 } 
-.card-content{
+.conts-card-content{
     margin-top: 45%;
 }
 .counts-title{
     font-size: 45px;
     font-weight: 600;
 }
+@media screen and (max-width: 600px) {
+    .count-content-area{
+        flex-direction: column;
+        margin-left: 50px;
+    }
+  }
+  
